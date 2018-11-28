@@ -1,0 +1,18 @@
+{ 
+    "dependencies": {
+      "main.js": {
+        "vendor": [
+        ],
+        "files": [
+          "scripts/**/*",
+          "scripts/main.js"
+        ],
+        "main": true
+      },
+      "admin.css": {
+        "files": [
+          "styles/admin/admin.scss"
+        ]
+      }
+    }
+}

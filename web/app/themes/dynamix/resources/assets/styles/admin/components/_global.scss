@@ -1,0 +1,296 @@
+@import "_elcard";
+.logo-text {
+    color: #fff;
+    padding: 5px 15px;
+    border: 2px solid;
+    font-weight: 600;
+    letter-spacing: 2px;
+    display: inline-block;
+    line-height: 26px;
+    .light {
+        font-weight: 200!important;
+    }
+}
+
+body.folded{
+    .el-header.fixed {
+        width: calc(100% - 32px)!important;
+    }
+}
+@media only screen and (max-width: 782px) {
+    body.folded .el-header.fixed {
+        width: calc(100% - 0px)!important;
+    }
+}
+
+#app{
+    >.el-container{
+        >.el-container{
+            margin-top: 50px;
+        }
+        >.el-header {
+            background-color: #fff;
+            color: #000;
+            text-align: right;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+            &.fixed{
+                height: auto;
+                position: fixed;
+                width: calc(100% - 160px);
+                z-index: 9;
+            }
+            nav{
+                padding: 0;
+            }
+            .el-menu.el-menu--horizontal{
+                background-color: transparent;
+            }
+        }
+        >.el-aside{
+            width: auto;
+            position: fixed;
+            height: calc(100vh - 32px);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        }
+        .el-main {
+            padding: 0;
+            margin-left: 0px;
+            background: white;
+            overflow-y: auto;
+            max-height: calc(100vh - 82px);
+        }
+    }
+}
+
+
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+    width: 200px;
+}
+.el-menu-vertical-demo.scrolled {
+    height: calc(100vh - 138px);
+    overflow: hidden;
+    overflow-y: auto;
+}
+.el-menu-vertical-demo.menu-collapse{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    >li{
+        margin-bottom: 0;
+    }
+}
+.el-menu.el-menu--horizontal {
+    border-bottom: 0;
+}
+.el-header{
+    nav{
+        padding: 0;
+    }
+    .el-menu.el-menu--horizontal{
+        background-color: transparent;
+    }
+}
+.el-main{
+    padding: 0;
+}
+.el-menu--collapse>.el-menu-item i,
+.el-menu--collapse>.el-submenu>.el-submenu__title i {
+    margin: 0;
+    vertical-align: middle;
+    width: 24px;
+    text-align: center;
+}
+.el-menu-item{
+    i{
+        font-size: 18px;
+    }
+}
+// admin carousel
+.el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+}
+.el-carousel__item{
+    .sliderovrerlay{
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(132, 0, 255, 0.35);
+        z-index: 2;
+        display: table;
+        transition: opacity 0.5 ease;
+        .inner{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        &:hover{
+            opacity: 1;
+        }
+    }
+    .slider-post{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: aliceblue;
+    }
+
+}
+.el-carousel__item .slider-post{
+    background-size: cover!important;
+}
+.el-message{
+    top: 38px;
+}
+.el-menu--horizontal>.el-submenu .el-submenu__title {
+    height: 50px;
+    line-height: 50px;
+}
+//  /*change scroll css*/
+//  :root {
+//     --scroll-bar-size: 10px;
+//     /**
+//   * Background color for custom scroll bars.
+//   * The color is applied to the thumb part of the scrollbar.
+//   */
+//     --scroll-bar-thumb-background-color: rgba(0, 0, 0, 0.2);
+//     /**
+//   * Background color for custom scroll bars in their active state.
+//   * The color is applied to the thumb part of the scrollbar.
+//   */
+//     --scroll-bar-thumb-background-color-active: rgba(0, 0, 0, 0.5);
+// }
+
+// ::-webkit-scrollbar {
+//     width: var(--scroll-bar-size);
+//     height: var(--scroll-bar-size);
+//     background: transparent;
+//     cursor: pointer;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background-color: var(--scroll-bar-thumb-background-color);
+//     border-radius: var(--scroll-bar-size);
+//     border-color: transparent;
+//     border-style: solid;
+//     border-width: calc(var(--scroll-bar-size)/3);
+//     background-clip: padding-box;
+// }
+
+// ::-webkit-scrollbar-thumb:active {
+//     background-color: var(--scroll-bar-thumb-background-color-active);
+// }
+
+// ::-webkit-scrollbar-thumb:hover,
+// ::-webkit-scrollbar-thumb:active {
+//     border-width: 1px;
+//     background-color: var(--scroll-bar-thumb-background-color-active);
+//     cursor: pointer;
+// }
+
+.media-imgs{
+    .el-card__body{
+        padding: 0;
+    }
+    .madia-thumb{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        background-color: #333;
+        .overlay
+        img{
+            max-height: 100%;
+            max-width: 100%;
+            // height: auto;
+            // width: auto;
+            // display: block;
+            // position: absolute;
+            // top: 0;
+            // bottom: 0;
+            // left: 0;
+            // right: 0;
+            // box-sizing: border-box;
+            // margin: auto;
+        }
+    }
+}
+
+.grid {
+    figure {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        min-width: 100%;
+        text-align: center;
+        cursor: pointer;
+        margin: 0;
+        background: #000;
+        img {
+            position: relative;       
+            min-height: 150px;
+            display: block;
+            margin: 0 auto;
+            // transition: 0.35s;
+            opacity: 1;
+        }
+        figcaption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        &.effect-zoe{
+            figcaption {
+                top: auto;
+                bottom: 0;
+                padding: 10px;
+                height: auto;
+                color: #ffffff;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 85%);
+                transition: transform 0.35s;
+                transform: translate3d(0, 100%, 0);
+                text-align: left;
+                h2 {
+                    font-size: 13px;
+                    margin: 0;
+                    line-height: 16px;
+                    margin-top: 7px;
+                }
+            }
+            &:hover{
+                >img{
+                    // opacity: 0.6;
+                }
+                figcaption{
+                    backface-visibility: visible;
+                    transform: translate3d(0,0,0);
+                }
+            }
+        }
+    }
+}
+
+.el-menu-item [class^=pg-] ,
+.el-menu-item [class^=ti] ,
+.el-menu-item [class^=fa] {
+    margin-right: 5px;
+    width: 24px;
+    text-align: center;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.el-select .el-input {
+    width: 110px;
+}
+.apexcharts-canvas,.apexcharts-svg{
+    width: 100%!important;
+}
+.el-card__header,.el-card__body{
+    padding: 0;
+}
+
