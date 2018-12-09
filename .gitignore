@@ -19,6 +19,7 @@ web/.htaccess
 /vendor
 
 #theme dynamix
+web/app/themes/
 !web/app/themes/dynamix
 web/app/themes/dynamix/dist
 web/app/themes/dynamix/node_modules

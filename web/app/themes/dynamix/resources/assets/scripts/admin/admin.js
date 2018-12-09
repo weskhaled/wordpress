@@ -11,6 +11,8 @@ import locale from 'element-ui/lib/locale/lang/en';
 Vue.use(VueApexCharts)
 Vue.use(ElementUI, { locale });
 Vue.use(VueMasonryPlugin);
+import FullCalendar from "vue-full-calendar";
+Vue.use(FullCalendar);
 import App from './vue/app.vue';
 // const App = {name:'app', template: '<div id="app"><router-view></router-view></div>'};
 import router from './router';

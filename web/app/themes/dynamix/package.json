@@ -121,6 +121,8 @@
     "vue-apexcharts": "^1.2.2",
     "vue-color": "^2.7.0",
     "vue-feather-icons": "^4.7.1",
+    "vue-full-calendar": "^2.7.0",
+    "vue-image-compare": "^0.6.1",
     "vue-masonry": "^0.11.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

@@ -10,8 +10,8 @@ $featured_image = get_the_post_thumbnail(get_the_id(), 'medium', array('class' =
 <article class="swiper-slide" data-hash="slide1" data-title="{{ get_the_title() }}" data-thumb-url="{!! $image[0] !!}">
     <header>
         <div class="pattern pattern-1"></div>
-        <!--<div class="pattern back-35-g"></div>-->
-        <div class="header-image" style="background-image: url({!! $image[0] !!};"></div>
+        <div class="pattern back-35-g"></div>
+        <div class="header-image" style="background-image: url('{!! $image[0] !!}');"></div>
 
         <div class="container container-inner" data-swiper-parallax-x="-30%">
             {{ the_content() }}

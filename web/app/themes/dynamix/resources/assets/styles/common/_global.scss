@@ -109,11 +109,11 @@ html, body {
 }
 /* btn
  */
- .btn-primary {
-  color: #fff;
-  background-color: #6b5488;
-  border-color: #523d6b;
-}
+//  .btn-primary {
+//   color: #fff;
+//   background-color: #6b5488;
+//   border-color: #523d6b;
+// }
 
 
 /*
@@ -232,7 +232,13 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     background-color: #000!important;
-}
+    }
+    .bg-view {
+      background-image: url(../images/view.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed !important;
+      background-color: #000!important;
+    }
    .back-35 {
     background-color: rgba(0, 0, 0, 0.35);
    }
@@ -335,7 +341,7 @@ a {
                 span {
                   margin-right: 10px;
                   padding-right: 10px;
-                  border-right: 1px solid #826e9e;
+                  border-right: 1px solid rgba(255, 255, 255, 0.2);
                   display: inline-block;
                   &:last-child {
                     margin-right: 0;
@@ -401,9 +407,7 @@ a {
   body > .page-content > header .navbar .navbar-nav > li:hover > a,
   body > .page-content > header .navbar .navbar-nav > li.active > a {
     /* border-top: 2px solid #00aaff; */
-    -webkit-box-shadow: inset 0px 1px 0px 0px #6b5388;
-    -moz-box-shadow: inset 0px 1px 0px 0px #6b5388;
-    box-shadow: inset 0px 1px 0px 0px #6b5388;
+    box-shadow: inset 0px 1px 0px 0px #00aaff;
   }
   
 /*
@@ -455,7 +459,7 @@ a {
   .pre-section{
     position: relative;
     z-index: 2;
-    background-color: #621FE5;
+    background-color: #00aaff;
     -webkit-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
@@ -466,7 +470,7 @@ a {
       position: absolute;
       top: 100%;
       z-index: 4;
-      background-color: #621FE5;
+      background-color: #00aaff;
       -o-transform: translate(-50%, -50%) rotate(-45deg);
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
       -webkit-transform: translate(-50%, -50%) rotate(-45deg);
@@ -1372,15 +1376,15 @@ a {
   /*badge*/
   .badge {
    /*font-size: 11px !important;*/
-   font-weight: 300;
+   font-weight: 200;
    letter-spacing: .8px;
    text-align: center;
    height: 18px;
-   padding: 3px 6px 3px 6px;
+   padding: 4px 8px 4px 8px;
    -webkit-border-radius: 12px !important;
    -moz-border-radius: 12px !important;
    border-radius: 12px !important;
-   background-color: #6b5488;
+   background-color: #00aaff;
    font-weight: normal;
    -webkit-font-smoothing: auto;
    -moz-osx-font-smoothing: auto;
@@ -1900,4 +1904,25 @@ a {
   background-image: url(../images/bg_15.jpg);
   background-position: center top;
   background-repeat: no-repeat;
+}
+.section-bg-16 {
+  background-image: url(../images/bg_16.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+// reset image compare
+.image-compare-handle {
+  .image-compare-handle-icon {
+    background-color: #fff!important;
+    padding: 5px 5px!important;
+    border: 0!important;
+    color: #0af!important;
+    font-size: 1.2rem!important;
+    &.left{
+      // border-right: 1px solid;
+    }
+    &.right{
+      // border-left: 1px solid;
+    }
+  }
 }

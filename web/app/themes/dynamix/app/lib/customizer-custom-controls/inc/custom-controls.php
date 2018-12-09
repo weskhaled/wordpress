@@ -726,9 +726,11 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
 		 * Find the index of the saved font in our multidimensional array of Google Fonts
 		 */
 		public function skyrocket_getFontIndex( $haystack, $needle ) {
-			foreach( $haystack as $key => $value ) {
-				if( $value->family == $needle ) {
-					return $key;
+			if (is_array($haystack) || is_object($haystack)) {
+				foreach( $haystack as $key => $value ) {
+					if( $value->family == $needle ) {
+						return $key;
+					}
 				}
 			}
 			return false;

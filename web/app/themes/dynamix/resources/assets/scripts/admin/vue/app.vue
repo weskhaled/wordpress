@@ -89,9 +89,13 @@
                 <i class="el-icon-picture-outline"></i>
                 <span slot="title">Medias</span>
               </el-menu-item>
-              <el-menu-item index="/condidate">
+              <!-- <el-menu-item index="/condidate">
                 <users-icon class="custom-class"></users-icon>
                 <span slot="title">Condidates</span>
+              </el-menu-item> -->
+              <el-menu-item index="/patient">
+                <users-icon class="custom-class"></users-icon>
+                <span slot="title">Patients</span>
               </el-menu-item>
               <el-menu-item index="3" disabled>
                 <i class="el-icon-document"></i>
@@ -154,6 +158,7 @@ import {
         },        
         getuser(){
             return axios.get(wpApiSettings.root+'wp/v2/users/me?_wpnonce='+wpApiSettings.nonce,{headers: { 'X-WP-Nonce': wpApiSettings.nonce }})  
+            // return axios.get(wpApiSettings.root+'wp-json/wp/v2/users/me?_wpnonce='+wpApiSettings.nonce,{headers: { 'X-WP-Nonce': wpApiSettings.nonce }})  
         },
         logout(){
           axios.post(wpApiSettings.root+'dynamix/v1/logout',{},{headers: { 'X-WP-Nonce': wpApiSettings.nonce }}).then((response) => {

@@ -4,7 +4,8 @@ import Index from '../vue/components/index.vue'
 import Medias from '../vue/components/medias.vue'
 import Section from '../vue/components/section.vue'
 import Slider from '../vue/components/slider.vue'
-import Condidat from '../vue/components/candidat.vue'
+// import Condidat from '../vue/components/candidat.vue'
+import Patient from '../vue/components/patient.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -29,10 +30,15 @@ export default new Router({
       name: 'slider',
       component: Slider,
     },
+    // {
+    //   path: '/condidate',
+    //   name: 'condidate',
+    //   component: Condidat,
+    // },
     {
-      path: '/condidate',
-      name: 'condidate',
-      component: Condidat,
+      path: '/patient',
+      name: 'patient',
+      component: Patient,
     },
   ],
 })

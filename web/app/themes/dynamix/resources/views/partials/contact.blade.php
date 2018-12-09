@@ -1,7 +1,7 @@
 <div class="pre-section text-center">
   <p class="color-white text-uppercase">Feel free to drop us a line to contact us</p>
 </div>
-<section id="contact" class="inner-shadow cover-img bg-city" data-stellar-background-ratio="0.1">
+<section id="contact" class="inner-shadow cover-img bg-city bg-view" data-stellar-background-ratio="0.1">
   <div class="pattern pattern-1"></div>
   <div class="pattern back-35"></div>
   <div class="container container-inner">
