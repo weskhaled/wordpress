@@ -23,7 +23,7 @@ class PageSubmitCv extends Controller
             $lastname = $_POST['lastname'];
             $mail = $_POST['mail'];
             $phone = $_POST['phone'];
-            $resumefile = $_FILES['resumefile'];
+            // $resumefile = $_FILES['resumefile'] || false;
             $message = $_POST['message'];
             // return $resumefile['name'];
             // if (!is_user_logged_in()){

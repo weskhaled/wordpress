@@ -72,6 +72,9 @@ button:focus {
 }
 #wpbody-content {
     padding-bottom: 0!important;
+    >div:not(#app){
+        display: none;
+    }
 }
 #wpbody {
     background-color: #ffffff!important;
